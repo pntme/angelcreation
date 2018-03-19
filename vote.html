@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+		 function calculate(){
+		 	var g = document.getElementById("g").value;
+		 	var b = document.getElementById("b").value; 5
+		 	var t = document.getElementById("t").value; 1000
+
+
+             var BR = Math.round(t*b/100)
+             var GR = Math.round(t*g/100);
+             document.getElementById("BR").innerHTML=BR;
+             document.getElementById("GR").innerHTML=GR;
+		 }
+
+	</script>
+</head>
+<body>
+  Total Votes : <input type="number" id = "t"> <br>
+  Green % :  <input type="number" id = "g"><br>
+  Blue %  :  <input type="number" id = "b"><br>
+   <button id="calculate" onclick="calculate()"> Calculate</button>
+
+   <p> Green = <span id="GR"> </span></p>  
+   <p>Blue  =  <span id="BR"> </span> </p>
+</body>
+</html>
+
